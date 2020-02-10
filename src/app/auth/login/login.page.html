@@ -1,0 +1,40 @@
+<ion-content class="ion-padding">
+
+  <ion-row style="height: 100%" >
+    <ion-col size="12" size-sm="10" offset-sm="1" size-md="8" offset-md="2" size-lg="6" offset-lg="3" size-xl="4"
+             offset-xl="4" style="display: flex; justify-content: center; flex-direction: column" >
+
+      <ion-card >
+        <ion-card-header>
+          <ion-img src="../../../assets/eye.png" >
+
+          </ion-img>
+        </ion-card-header>
+
+        <ion-card-content>
+
+          <form [formGroup]="formLogin" (ngSubmit)="login()">
+            <ion-item class="rounded" lines="none">
+              <ion-input type="text" placeholder="Usuario" formControlName="usuario" > </ion-input>
+              <ion-icon name="person" slot="start" ></ion-icon>
+            </ion-item>
+
+            <ion-item class="rounded"  lines="none" style="margin-top: 15px" >
+              <ion-input type="text" placeholder="Password" formControlName="password" > </ion-input>
+              <ion-icon name="eye" slot="start" ></ion-icon>
+            </ion-item>
+
+            <ion-button id="btnLogin" expand="block" type="submit" >Login</ion-button>
+
+            <ion-text id="txtFooter">
+              <h6> App Inventario © 2020 </h6>
+            </ion-text>
+          </form>
+
+        </ion-card-content>
+      </ion-card>
+
+    </ion-col>
+  </ion-row>
+
+</ion-content>

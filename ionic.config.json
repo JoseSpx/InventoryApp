@@ -1,5 +1,7 @@
 {
   "name": "InventoryApp",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
